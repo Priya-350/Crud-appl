@@ -1,0 +1,203 @@
+.crud{
+    display:flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+    width:70%;
+    height:100vh;
+}
+.crud h1{
+    padding-top:0.6em ;
+    padding-bottom: 0.6em;
+}
+.crud form {
+   display:flex;
+   justify-content:space-between;
+   width:90%;
+   padding-bottom: 1.5em;
+   
+}
+.crud form input{
+    width:50%;
+    height: auto;
+    padding: 0.4em;
+    text-indent:5px ;
+    font-size:15px ;
+    border-radius:6px ;
+    border:1px solid rgba(0, 0, 0, 0.414) ;
+}
+.crud form input:active{
+    border:1px solid rgba(0, 0, 0, 0.414) ;
+}
+.crud form button{
+    padding: 0.4em;
+    font-size:15px ;
+    background-color: rgb(16, 203, 38);
+    color:white;
+    border: none;
+    border-radius:6px ;
+}
+
+.crud table{
+    width:90%;
+    border-collapse: collapse;
+    
+    border:1px solid rgba(0, 0, 0, 0.414) ;
+    
+}
+
+.crud table thead tr th,.crud table tbody tr td{
+    border-collapse: collapse;
+   
+    border:1px solid rgba(0, 0, 0, 0.414) ;
+    padding:0.5em ;
+    text-align: center;
+    font-size:16px ;
+}
+.crud table tbody tr button{
+    padding: 0.2em 0.7em;
+    font-size:14px ;
+}
+.crud table tbody tr:nth-child(2n){
+    background-color: rgba(105, 106, 106, 0.264);
+}
+.crud table .edit,.crud table .del{
+    background-color: rgb(16, 203, 38);
+    color:white;
+    border: none;
+    border-radius:6px ;
+    padding:0.5em 1.3em;
+}
+.crud table .del{
+    background-color: rgb(235, 27, 27);
+}
+.modal{
+    width:100%;
+    height:100vh;
+    position: fixed;
+    z-index: 1;
+    background-color:rgba(146, 143, 143, 0.438) ;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.modal1{
+    display:flex;
+    flex-direction: column;
+    background-color: white;
+    align-items: flex-start;
+    justify-content: space-between;
+    width:400px;
+    height:auto;
+    
+
+}
+.record{
+    display:flex;
+    flex-direction:row;
+    width:400px;
+    justify-content:space-between;
+    padding:1.25em ;
+  
+}
+.time{
+   font-size:30px ;
+   padding:0em 0.1em ;
+   cursor: pointer;
+}
+.time:hover{
+    background-color: rgba(227, 47, 47, 0.834);
+}
+
+.modal form{
+    display:flex;
+    flex-direction: column;
+    width:400px;
+    padding:0em 1.25em;
+}
+.modal form label{
+    padding:0em 0em 0.5em 0em;
+    font-size: 18px;
+}
+.modal form input[type='text']{
+    margin-bottom:0.5em ;
+    width:350px;
+    padding:0.5em ;
+}
+.modal form button{
+    width: fit-content;
+    padding:0.5em ;
+    margin-bottom: 1.5em;
+    margin-top: 0.5em;
+}
+
+@media (max-width:500px){
+    .crud h1{
+        font-size:22px;
+        padding-top:1em ;
+    }
+.crud form{
+   width:100%;
+   gap:1em;  
+   align-items: center;
+
+}
+.crud form input{
+    width:95%;
+    height:35px;
+}
+.crud form button{
+    font-size:14px;
+    width:120px;
+    padding: 0.1em ;
+    
+    height:30px;
+    text-align: justify;
+    
+}
+.crud table{
+    width:70%;
+    
+}
+.crud table thead tr th,.crud table tbody tr td{
+    font-size:14px;
+}
+.crud table .edit,.crud table .del{
+    padding:0.3em 0.5em;
+}
+.crud table .name{
+    width:60px;
+    overflow-wrap: break-word;
+   
+}
+.modal1{
+    width:280px;
+}
+
+.modal form input[type='text']{
+    width:80%;
+    margin-bottom: 0em;
+}
+.modal form label{
+    padding:0em;
+
+    font-size: 16px;
+}
+.record{
+    width:275px;
+}
+.modal form{
+    padding:0em;
+    padding-left: 1.3em;
+    justify-content:flex-start;
+    align-items: start;
+}
+.crud form .btt{
+    width:fit-content;
+    padding-left:0.2em ;
+    padding-right: 0.2em;
+    
+}
+
+}
